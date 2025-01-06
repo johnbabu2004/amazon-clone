@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header (Navigation Bar) -->
+  <header>
+    <div class="container-fluid bg-dark text-white py-2">
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" class="logo-img">
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar d-flex">
+          <input type="text" class="form-control" placeholder="Search products, brands, and more">
+          <button class="btn btn-warning">Search</button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="nav-links">
+          <a href="#" class="text-white">Sign In</a>
+          <a href="#" class="text-white ms-3">Cart</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content (Product List) -->
+  <main>
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Product 1 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product" class="product-img">
+            <h3>Product 1</h3>
+            <p>$19.99</p>
+            <button class="btn btn-warning">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product" class="product-img">
+            <h3>Product 2</h3>
+            <p>$29.99</p>
+            <button class="btn btn-warning">Add to Cart</button>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Product" class="product-img">
+            <h3>Product 3</h3>
+            <p>$39.99</p>
+            <button class="btn btn-warning">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 text-center">
+    <p>&copy; 2024 Amazon Clone | All Rights Reserved</p>
+  </footer>
+
+  <!-- Bootstrap JS and Popper (for Bootstrap components like dropdowns) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
