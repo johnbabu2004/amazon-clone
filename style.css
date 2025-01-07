@@ -1,83 +1,299 @@
-/* Basic reset */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    font-family: arial;
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Header */
-  header .logo-img {
-    width: 100px;
-  }
-  
-  header .search-bar {
-    width: 50%;
-  }
-  
-  header .search-bar input {
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    padding: 5px 15px;
-  }
-  
-  header .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-  }
-  
-  header .nav-links a:hover {
-    color: #febd69;
-  }
-  
-  /* Product Section */
-  .product-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    text-align: center;
-    border-radius: 8px;
-    background-color: #fff;
-  }
-  
-  .product-card .product-img {
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    background-color: #2b6777;
+    color: #f2f2f2;
+    align-items: center;
+    position: fixed; /* Makes the navbar fixed */
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .product-card h3 {
-    font-size: 18px;
-    color: #111;
-    margin-top: 10px;
-  }
-  
-  .product-card p {
-    color: #b12704;
-    font-size: 16px;
-  }
-  
-  .product-card button {
-    background-color: #febd69;
+    z-index: 1000; /* Ensures the navbar stays above other content */
+}
+
+/* Logo Styling */
+.logo {
+    height: 50px;
+    width: 100%;
+    background-image: url("images/amazon-logo.png");
+    background-size: cover;
+}
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+/* Border and Hover Effects */
+.border {
+    border: 2px solid transparent;
+    padding: 3px;
+}
+.border:hover {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Address Styling */
+.add-first {
+    margin-left: 15px;
+    color: #a5a4a4;
+    font-size: 0.85rem;
+}
+.add-second {
+    font-size: 1rem;
+    margin-left: 3px;
+}
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+/* Search Section Styling */
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    width: 600px;
+    height: 40px;
+    border-radius: 4px;
+}
+.nav-search:hover {
+    border: 2px solid orange;
+}
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
+}
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon {
+    width: 45px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* Cart and Text Styling */
+.cart-icon {
+    display: inline-block;
+    font-size: 30px;
+}
+.cart-text {
+    display: inline-block;
+    font-weight: 700;
+}
+
+/* Panel Section */
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+    background-color: #f5f5dc;
+    margin-top: 60px; /* Adjusted for the fixed navbar */
+    padding-top: 10px;
+}
+
+.panel-ops {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 250px;
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG24/Smart_Watches/MED_MAY/Tall_Hero_1500X600_BAU_NewLaunches._CB554931622_.jpg");
+    background-size: cover;
+    margin-top: 60px; /* Adjusted for the fixed navbar */
+}
+
+/* Main Content Styling */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    margin-top: 60px; /* Adjusted for the fixed navbar */
+}
+
+.box{
+    margin-top: 0.7rem;
+    height: 400px;
+    width: 23%;
+    border: 2px solid transparent;
+    background-color: white;
+    padding-top:20px;
+    padding-bottom:15px;
+}
+.multi-products1,.multi-products2,.multi-products3,.multi-products4{
+    width: 280px;
+    height: 340px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* This ensures 2 columns */
+   padding: 0px 20px;
+    
+}
+
+.sm-box {
+    margin-top: 1rem;
+    max-height: 120px; /* Ensures it doesn't grow beyond this */
+    max-width: 130px; /* Ensures it doesn't grow beyond this */
+    background-size: cover; /* Image covers the box */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating of the image */
+    overflow: hidden; /* Ensures no content overflows */
   
-  .product-card button:hover {
-    background-color: #f7a800;
-  }
+}
+   
+   
+
+.p-heading{
+    font-size: 21px;
+    text-align: center;
+
+}
+.mp1-img1{
+    background-image: url("https://m.media-amazon.com/images/I/61mCbqkWLSL._AC_SY170_.jpg");
+    
+}
+.mp1-img2{
+    background-image: url("https://m.media-amazon.com/images/I/51ByfTtt+KL._AC_SY170_.jpg");
+
+}
+.mp1-img3{
+    background-image: url("https://m.media-amazon.com/images/I/61ns2XRjiGL._AC_SY170_.jpg");
+}
+.mp1-img4{
+    background-image: url("https://m.media-amazon.com/images/I/51bY3pKII8L._AC_SY170_.jpg");
+}
+.mp2-img1{
+    background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg") ;
+}
+.mp2-img2{
+ background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg");   
+}
+.mp2-img3{
+ background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg");   
+}
+.mp2-img4{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg");   
+}
+.mp3-img1{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/Img24/SMB/GW/December/Desktop_QC_Clothing_1x._SY116_CB540581077_.jpg");
+}
+.mp3-img2{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/Img24/SMB/GW/December/Desktop_QC_Decor_1x._SY116_CB540581077_.jpg");   
+}
+.mp3-img3{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/Img24/SMB/GW/December/Desktop_QC_Fashion_Accessories_1x._SY116_CB540581077_.jpg");   
+   }
+   .mp3-img4{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/Img24/SMB/GW/December/Desktop_QC_Glasses_1x._SY116_CB540581077_.jpg");   
+   }
+   .mp4-img1{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg");
+   }
+   .mp4-img2{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg");
+   }
+   .mp4-img3{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg");
+   }
+   .mp4-img4{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg");
+   }
+
+
+   /** footer section**/
+   footer{
+     margin-top: 15px;
+   }
+   .footer-panel1{font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2b6777;
+    color: #ffffff;
+    height: 50px;
+   }
+
+   .footer-panel2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:10px ;
+    height:400px;
+    background-color: #f2f2f2;
+   }
+   ul a{
+    margin-top: 13px;
+    font-size: 0.8rem;
+    display: block;
+   }
+   .footer-panel3{
   
-  /* Footer */
-  footer {
-    background-color: #232f3e;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+    border-top: 1px solid white;
+    height: 50px;
+    background-color: #c8d8e4;
+   }
+   .footer-logo{
+    position: absolute;
+    right: 53%;
+    height:50px;
+    width: 100px;
+    background-image: url("images/amazon-logo.png");
+    background-size: cover;
+   }
+   .english,.india{
+
+    font-size: 13px;
+    margin-right: 2rem;
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+
+   }
+   .english-india{
+    position: absolute;
+    right: 25%;
+   }
+   .footer-panel4{
     color: white;
-    font-size: 14px;
-  }
-  
+    height: 80px;
+    background-color: #2b6777;
+    text-align: center;
+   }
+   .pages{
+    padding-top: 25px;
+     font-size:0.7rem;
+   }
+   .copyright{
+    font-size:0.7rem;
+    padding-top: 5px;
+   }
+   
